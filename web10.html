@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lage="ko-KR">
+<html lang="ko-KR">
 <head>
-    <meta charset="UTF-8"> 
-    <title>상세페이지</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>web</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
- 
-</head>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>전체폰트</title>
+
+  <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
     @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
     @font-face {
@@ -39,8 +38,8 @@
     }
       
       *{
-         font-family: 'Noto Sans KR', sans-serif;
-         margin: 0;
+          font-family: 'Noto Sans KR', sans-serif;
+           margin: 0;
            padding: 0;
            font-weight: 400;
       }
@@ -387,6 +386,15 @@
         margin-top: 44px;
       }
 
+      .topjozar label{
+        height: 28px;
+        width: 64px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        border-color: #FF4345;
+
+      }
 
 
 
@@ -398,6 +406,7 @@
       margin: 0;
       left: 0;
       bottom: 0;
+      padding-top:80px; 
       margin-left: auto;
       margin-right: auto;
       /*background-color: #959494;*/
@@ -407,7 +416,7 @@
 
       .font_write h3{
         font-size: 70px;
-        font-family: GmarketSansLight;
+        font-family: GmarketSansMedium;
         text-align: center;
         
       }
@@ -504,12 +513,15 @@
 /*다섯번째 박스*/ 
 
      .fifthbox{
-      width: 100%;
-      height: 800px;
-      margin: 0;
+      width: 1280px;
+      
+      margin-left: auto;
+      margin-right: auto;
       left: 0;
       bottom: 0;
       /*background-color: #EDEDED;*/
+      margin-bottom: 160px;
+
       }
 
 
@@ -517,7 +529,7 @@
         font-size: 24px;
         font-weight: 400;
         text-align : center;
-        margin-top: 50px;
+        margin-top: 80px;
         margin-bottom: 40px;
       }
 
@@ -526,7 +538,7 @@
       .fifthbox .example_with {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     
       }
 
@@ -538,11 +550,10 @@
       }*/
 
       .fifthbox .example_with .exbox01 img{
-        width: 500px;
-        height: 500px;
+        
+
         background-color: black;
-        margin-right: 14px;
-        margin-top: 10px;
+      
         background-size: contain;
       }
 
@@ -555,11 +566,10 @@
 
 
       .fifthbox .example_with .exbox02 img{
-        width: 500px;
-        height: 500px;
+       
+        
         background-color: black;
-        margin-right: 14px;
-        margin-top: 10px;
+     
         background-size: cover;
       }
 
@@ -574,11 +584,10 @@
 
 
       .fifthbox .example_with .exbox03 img{
-        width: 500px;
-        height: 500px;
+        
+        
         background-color: black;
-        margin-right: 14px;
-        margin-top: 10px;
+        
         background-size: contain;
       }
 
@@ -593,7 +602,7 @@
 
       .fifthbox h5{
         text-align: center;
-        padding-top: 8px;
+        padding-top: 10px;
         margin-right: auto;
         margin-left: auto;
 
@@ -601,22 +610,28 @@
         height: 40px;
         font-size: 16px;
         font-weight: 400px;
-        background-color: #181818;
+        background-color: #262626;
         border-radius: 100px;
         margin-top: 26px;
         color: white;
+      }
+
+      .fifthbox h5:hover{
+        background-color: #FF4345;
       }
 
 
 
 
 /*푸터*/
-      footer{
+     footer{
       display: flex;
       width: 100%;
-      left: 0;
+      margin: auto;
+            left: 0;
       bottom: 0;
       background-color: black;
+      margin-top: 100px;
    
 
       justify-content: space-between;
@@ -628,6 +643,7 @@
       footer .all{
       display: flex;
       width: 1280px;
+      margin: auto;
       margin-top: 0px;
       min-width: 1280px;
       }
@@ -635,7 +651,6 @@
       footer a {
       
       color: #E9E9E9;
-      font-weight: 100;
       }  
 
       footer .logo{
@@ -677,15 +692,11 @@
       display: flex;
       font-size: 16px;
       justify-content: space-between;
-      margin-top: 0px;
-      margin-left: 50px;    
-      margin-bottom: 0px;  
+      margin-top: 10px;
+      margin-left: 50px;      
       }   
 
-      footer ul{
-      display: flex;
-      
-      }
+     
 
       footer .footer_information li{
       list-style: none;
@@ -699,7 +710,7 @@
       footer .footer_link{
       display: flex;
       justify-content: space-between;
-      margin-top: 0px;
+      margin-top: 20px;
       margin-left: 50px; 
 
       }
@@ -713,6 +724,61 @@
       text-decoration: none;
       }
 
+      footer a:hover{
+      color: white;
+      }
+
+      .topjozar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 108px;
+      }
+
+      .topjozar p{
+        font-size: 14px;
+        font-weight: 400;
+        margin-right: 20px;
+        margin-bottom: 0px;
+      }
+
+      .btn-check:checked+.btn-outline-primary{
+        background-color: #FF4345;
+        border-color: #FF4345;
+      }
+
+      .btn-outline-primary{
+        color: #FF4345;
+      }
+
+      .firstbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+      }
+
+      .firstbox .firste{
+        color: #ffffff;
+        font-size: 180px;
+        font-weight: 600;
+        line-height: 240px;
+        text-align: center;
+
+      }
+
+     .seconde{
+      color:#00c01e;
+      font-size: 180px;
+        font-weight: 600;
+        line-height: 240px;
+        text-align: center;
+    }
+
+    .dlalwl{
+      display: flex;
+      justify-content: center;
+    }
 
 
 </style>
@@ -734,14 +800,18 @@
 
     <div class="list_login">
       <ul>
-        <li><a href="./web9.html">로그인</a></li>
+        <li><a href="./web8.html">마이페이지</a></li>
         <li><a href="./web9.html">회원가입</a></li>
       </ul>
     </div>
   </header>
 
 
-    <div class="firstbox"></div>
+    <div class="firstbox">
+      <span class="firste">G마켓산스</span><br>
+      <span class="seconde">Gmarket Sans</span>
+      
+    </div>
 
     <section class="conB">
       <div class="secondbox">
@@ -749,14 +819,14 @@
       <div class="secondbox_all">
 
         <div class="top">
-            <h2>Gmarket SansM</h2>
+            <h2>Gmarket Sans</h2>
             <div class="box"><a href="http://company.gmarket.co.kr/company/about/company/company--font.asp"><h3>다운로드</h3></a></div>
         </div>
 
         <div class="tag">
          <ul>
-            <li class="linebox"><a href="#">#브이로그</a></li>
-            <li class="linebox"><a href="#">#본문</a></li>
+            <li class="linebox"><a href="./web4.html">#브이로그</a></li>
+            <li class="linebox"><a href="./web4.html">#본문</a></li>
          </ul>
         </div>
 
@@ -808,11 +878,27 @@
 
 
     <div class="thirdbox">
+      <div class="topjozar">
+        <p>두께</p>
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group" style="margin-right: 44px; ">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="btnradio1">Thin</label>
 
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio2">Light</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio3" style="padding: 6px 0px; ">Medium</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio4">Bold</label>
+        </div>
+        <p>크기</p>
         <div class="barda"> 
            <input class="jozar" type="range">
            <p>30px</p>
         </div>
+      </div>
         <div class="font_write"><h3>넓은 하늘로의 비상을 꿈꾸며
         </h3></div>
     </div>
@@ -852,48 +938,30 @@
     </div>
 
 
-    <div class="fifthbox">
+    
     <div class="fifthbox">
     <h2><b>이런 폰트</b>랑 같이 써보는거 어때요?</h2>
     <div class="example_with"> 
-       <div class="exbox01">
-         <a href="http://www.naver.com"><img src="https://i.postimg.cc/R0985X7f/Kakao-Talk-20211218-225623050.png"/></a>
+       <div class="exbox01" style="width:420px; height:480px;">
+         <div class="dlalwl"style="width:420px; overflow:hidden;"><img height="380px" src="https://i.postimg.cc/R0985X7f/Kakao-Talk-20211218-225623050.png"/></div>
          <h4>산돌 네모산스</h4>
-         <h5>폰트 다운받기</h5>
+         <a href="./web10.html"><h5>폰트 다운받기</h5></a>
        </div>
-       <div class="exbox02">
-         <a href="http://www.naver.com"><img src="https://i.postimg.cc/Gt2PkskH/Kakao-Talk-20211218-225647333.png"/>
+       <div class="exbox02" style="width:420px; height:480px; ">
+         <div class="dlalwl "style="width:420px; overflow:hidden;"><img height="380px" src="https://i.postimg.cc/Gt2PkskH/Kakao-Talk-20211218-225647333.png"/></a></div>
          <h4>Pretendard</h4>
-         <h5>폰트 다운받기</h5>
+         <a href="./web10.html"><h5>폰트 다운받기</h5></a>
        </div>
-       <div class="exbox03">
-         <a href="http://www.naver.com"><img src="https://i.postimg.cc/RZNsrhb7/Kakao-Talk-20211218-225754559.png"/>
+       <div class="exbox03" style="width:420px; height:480px; ">
+         <div class="dlalwl" style="width:420px; overflow:hidden;"><img height="380px" src="https://i.postimg.cc/RZNsrhb7/Kakao-Talk-20211218-225754559.png"/></div>
          <h4>Noto Sans</h4>
-         <h5>폰트 다운받기</h5>
+         <a href="./web10.html"><h5>폰트 다운받기</h5></a>
        </div>
     </div>
 
 </div>
 
-
-    </div>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -922,12 +990,27 @@
          </ul>
       </div>
 
-        
+      <div class="footer_link">
+         <ul>
+            <li><a href="#"><img src="https://i.postimg.cc/bvwMRRRP/dsd.png" alt="유튜브" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/3RPcYQQr/ss.png" alt="인스타" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/W4TY1wyr/ssffdf.png" alt="페이스북" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/0ycXrw1B/sd.png" alt="트위터" height="24"></a></li>
+         </ul>
+      </div>
+     <div>
+   </div>
+
+</div>
 </footer>
+
 
 
    
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+    </html>
+
