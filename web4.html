@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>전체폰트</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+		@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+		}
+		@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+		}
+		@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+		}
+		@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+		}
+
+		*{
+			font-family: 'Noto Sans KR', sans-serif;
+			margin: 0;
+ 		 	padding: 0;
+ 		 	font-weight: 400;
+		}
+		
+		a{
+			text-decoration: none;
+			color: #262626;
+		}
+
+		li{
+			list-style: none;
+		}
+		header{
+			display: flex;
+			width: 1280px;
+			margin: auto;
+
+			justify-content: space-between;
+ 			align-items: center;
+			height: 80px;
+		}
+
+		header .logo{
+			margin-left: 16px;
+			margin-right: 100px;
+		}
+
+		header .list_menu {
+		display: flex;
+		font-size: 16px;
+		justify-content: space-between;
+  	align-items: center;
+
+		}	
+
+		header ul{
+		display: flex;
+		margin-bottom: 0;
+		padding-left: 0px;
+		}
+
+		header .list_menu li{
+		list-style: none;
+		margin: 0px 28px;
+		transition: all 1s ease-in;
+		}
+
+		header a:hover{
+			color: #FF4345;
+			font-weight: 700;
+		}
+
+
+		header .list_login li{
+		list-style: none;
+		margin: 0px 16px;
+		transition: all 0.5s ease-in;
+		}
+
+		header .list_login {
+		
+		font-size: 14px;
+		display: flex;
+  	justify-content: space-between;
+ 		align-items: center;
+		}	
+
+		.list_menu .select{
+			font-weight: 500;
+			color: #FF4345;
+		}
+
+		.conA .kf{
+			background-color: #FF7F7F;
+			height: 160px;
+			display: flex;
+      align-items: center;
+      cursor: pointer; 
+      
+		}
+
+		.kf h1{
+			width: 100%;
+			text-align: center;
+			font-size: 60px;
+			font-family: 'GmarketSansMedium', sans-serif;
+			color: #FFFFFF;
+			margin-bottom: 0px;
+		}
+
+		.conA .mf{
+			background-color: #FF6060;
+			height: 160px;
+			display: flex;
+      align-items: center;
+      cursor: pointer; 
+
+		}
+
+		.mf h1{
+			width: 100%;
+			text-align: center;
+			font-size: 60px;
+			font-family: 'Cafe24Oneprettynight';
+			color: #FFFFFF;
+			margin-bottom: 0px;
+		}
+
+		.conA .df{
+			background-color: #FF4345;
+			height: 160px;
+			display: flex;
+      align-items: center;
+      cursor: pointer; 
+
+		}
+
+		.df h1{
+			width: 100%;
+			text-align: center;
+			font-size: 60px;
+			font-family: 'NeoDunggeunmo';
+			color: #FFFFFF;
+			margin-bottom: 0px;
+		}
+
+		.conB{
+			margin-top: 80px;
+		}
+
+		.top_menu ul{
+			display: flex;
+			justify-content: center;
+			padding-left: 0px;
+		}
+
+		.top_menu li{
+			margin: 0px 21px;
+			
+		}
+
+		.top_menu li a{
+			font-size: 24px;
+			font-weight: 500;
+			color: #717171;
+			transition: all 0.3s ease;
+		}
+
+		.top_menu .select{
+			font-weight: 700;
+			color: #262626;
+			border-bottom: 2px solid #262626;
+		}
+
+		.top_menu a:hover .select{
+			border-bottom: none;
+		}
+
+		.top_menu li a:hover{
+			color: #262626;
+			font-weight: 700;
+		}
+
+		.bot_menu{
+			font-size: 18px;
+			margin-top: 20px;
+		}
+
+		.bot_menu ul{
+			display: flex;
+			justify-content: center;
+			padding-left: 0px;
+		}
+
+		.bot_menu ul li{
+		 padding: 10px 20px;
+		 margin: 10px;
+		 background-color: #F5F5F5;
+		 border-radius: 1000px;
+		 font-weight: 300;
+		 transition: background-color 0.3s ease;
+		}
+
+		.bot_menu ul li:hover{
+			background-color: #FF4345;
+			font-weight: 400;
+			color: white;
+		}
+
+
+		 footer{
+      display: flex;
+      width: 100%;
+      margin: auto;
+            left: 0;
+      bottom: 0;
+      background-color: black;
+      margin-top: 100px;
+   
+
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 194px;
+
+      }  
+
+      footer .all{
+      display: flex;
+      width: 1280px;
+      margin: auto;
+      margin-top: 0px;
+      min-width: 1280px;
+      }
+
+      footer a {
+      
+      color: #E9E9E9;
+      }  
+
+      footer .logo{
+      margin-top: 50px;
+      margin-left: 80px;
+      }
+
+      footer .smllall{
+      display: flex;
+      margin: 0px;
+      justify-content: space-between;
+
+      }
+
+      footer .footer_list_menu {
+      display: flex;
+      font-size: 16px;
+      justify-content: space-between;
+      margin-top: 45px;
+      margin-left: 50px;    
+      margin-right: 100px;  
+      }   
+
+      footer ul{
+      display: flex;
+      }
+
+      footer .footer_list_menu li{
+      list-style: none;
+      margin-right: 30px;
+      }
+
+      footer .footer_list_menu a{
+      text-decoration: none;
+      }
+
+
+      footer .footer_information {
+      display: flex;
+      font-size: 16px;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-left: 50px;      
+      }   
+
+     
+
+      footer .footer_information li{
+      list-style: none;
+      margin-right: 20px;
+      }
+
+      footer .footer_information a{
+      text-decoration: none;
+      }
+
+      footer .footer_link{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-left: 50px; 
+
+      }
+
+      footer .footer_link li{
+      list-style: none;
+      margin-right: 10px;
+      }
+
+      footer .footer_link a{
+      text-decoration: none;
+      }
+
+      footer a:hover{
+      color: white;
+      }
+
+      .bar{
+      	height: 140px;
+      	background-color: #F5F5F5;
+      	margin-top: 42px;
+      	position:sticky;
+      	top:0px;
+      	z-index: 100;
+
+      }
+
+      .bar .top_bar{
+      	margin: auto;
+      	width: 1280px;
+
+      }
+
+      .bar .bot_bar{
+      	display: flex;
+      }
+
+      .bot_bar .dropdown{
+      	margin-top: 12px;
+      	margin-left: 16px;
+      }
+
+      .bar .text{
+      	
+      	width: 1280px;
+      	height: 40px;
+      	border: 0;
+      	padding: 10px;
+      	margin-top: 24px;
+      	outline: none;
+
+      }
+
+      .bar .search{
+      	width: 304px;
+      	height: 40px;
+      	margin-top: 12px;
+      }
+
+      .bar .search .sear{
+      	width: 264px;
+      	outline: none;
+      	border: 0;
+      	padding: 8px 10px;
+      	float: left;
+      }
+
+      .bar .btn{
+      	border-radius: 0px;
+      	height: 40px;
+      	background-color: white;
+      	color: #262626;
+      	border: 0;
+      	font-size: 14px;
+      }
+
+      .search .sear-btn{
+      	width: 40px;
+      	float: right;
+      	height: 40px;
+      	border:0;
+      	background-color: #FF4345;
+      	color: white;
+
+      }
+
+      .conD{
+      	width: 1280px;
+      	margin: auto;
+      	margin-top: 40px;
+      	display: flex;
+      	justify-content: space-between;
+  			align-items: center;
+  			flex-wrap: wrap;
+  	    }
+
+      .conD .box {
+			  flex: 0 0 306px;
+			  position: relative;
+			  width: 306px;
+			  height: 452px;
+			  border: 0.3px solid #e1e1e0;
+			  padding: 40px 32px;
+			  margin-top: 20px;
+			  transition: all 0.3s ease;
+			}
+
+			.box:hover{
+				border: 1px solid #FF4345;
+
+			}
+
+
+			.conD .box_text h3{
+				font-size: 18px; 
+				font-weight: bold;
+			}
+
+			.conD .box_text h4{
+				font-size: 14px; 
+				font-weight: normal;
+				color: #595959;
+
+			}
+
+			.conD .box_text h4:after {
+				content: "";
+        display: block;
+        width: 100%;
+        border-bottom: 0.3px solid #e1e1e0;
+        margin-top: 16px;
+         
+			}
+
+			.conD .box_text p{
+				font-size: 36px;
+				margin-top: 24px;
+				font-family: 'GmarketSansMedium'; 
+				height: 216px;
+				
+			}
+
+			.conD .box_text a{
+				color: #262626;
+				font-size: 14px;
+				font-weight: 300;
+				background-color: #F5F5F5;
+				padding: 2px 8px;
+				border-radius: 15px;
+				display: inline-block;
+				margin: 2px 1px;
+				transition: background-color 0.3s ease;
+			}
+
+			.conD .box_text a:hover{
+				background-color: #FF4345;
+				color: white;
+				font-weight: 400;
+			}
+
+			#text2{
+				font-family: 'yg-jalnan';
+			}
+
+			#text3{
+				font-family: 'Cafe24Oneprettynight';
+			}
+
+			#text4{
+				font-family: 'NeoDunggeunmo';
+			}
+
+
+
+			 input[type=range] {
+		    -webkit-appearance: none; 
+		    width: 200px; 
+		    height: 2px;
+		    background: #262626; 
+		    cursor: pointer;
+		    border-radius: 0; /* iOS */
+		   transition: background 450ms ease-in;
+		  }
+
+		  input[type=range]:focus {
+		    outline: none; 
+		  }
+
+		  input[type=range]::-webkit-slider-thumb{
+		    -webkit-appearance: none;
+		    width: 10px;
+		    height: 10px;
+		    background: #262626;
+		    
+		    border-radius:50%;
+		    cursor: pointer;
+		  }
+		  input[type=range]::-moz-range-thumb{
+		    -webkit-appearance: none;
+		    width:8px;
+		    height:8px;
+		    background: #262626;
+		    border: 8px solid #262626;
+		    border-radius:50%;
+		    cursor: pointer;
+		  }
+
+		  .barda{
+		  	margin-top: 16px;
+		  	margin-left: 20px;
+		  	display: flex;
+		  }
+
+		  .jozar{
+		  	margin-top: 14px;
+		  }
+
+		  .barda p{
+		  	margin-left: 12px;
+		  	font-size: 14px;
+		  	line-height: 28px;
+		  }
+
+		  .dropdown2{
+		  	margin-top: 12px;
+		  
+		  }
+
+		  .bar .layout{
+		  	margin-top: 18px;
+		  	margin-left: 52px;
+		  }
+
+		  .bar-left{
+		  	display: flex;
+		  }
+
+		  .bar-right{
+		  	display: flex;
+		  }
+
+		  .bar-right a{
+		  	margin-left: 4px;
+		  }
+
+		  .bot_bar{
+		  	display: flex;
+		  	justify-content: space-between;
+		  }
+
+		  .bar .dropdown-item{
+		  	font-size: 14px;
+		  	margin-left: 0;
+		  	transition: all 0.3s ease;
+		  }
+
+		  .dropdown-item:hover {
+		  	background-color: #FF4345;
+		  	color: white;
+		  }
+		  
+		  .layout .nselect{
+		  	opacity: 50%;
+		  }
+
+		  .layout .nselect:hover{
+		  	opacity: 100%;
+		  }
+
+		  .bot_menu .select{
+		  	background-color:  #FF4345;
+		  }
+
+		  .bot_menu .select a{
+		  	color: white;
+		  	font-weight: 400;
+		  }
+
+		  a:hover{
+		  	color: white;
+		  }
+
+
+	</style>	
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="./index.html">
+				<img src="https://i.ibb.co/YW3TJgZ/Kakao-Talk-20211211-0006528511.png" alt="글길" height="30"></a>
+		</div>		
+
+		<div class="list_menu">
+			<ul>
+				<li><a class="select" href="./web2.html">전체폰트</a></li>
+				<li><a href="./web5.html">라이센스</a></li>
+				<li><a href="">폰트길잡이</a></li>
+			</ul>
+		</div>	
+
+		<div class="list_login">
+			<ul>
+				<li><a href="">로그인</a></li>
+				<li><a href="">회원가입</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<section class="conA">
+		<div class="kf" onclick="window.open('https://www.behance.net/')">
+			<h1>정보전달 고딕체, 길잡이 보러가기</h1>
+		</div>
+		<div class="mf" onclick="window.open('https://www.behance.net/')">
+			<h1>감성적인 명조체, 길잡이 보러가기</h1>
+		</div>
+		<div class="df" onclick="window.open('https://www.behance.net/')">
+			<h1>디자인 폰트, 길잡이 보러가기</h1>
+		</div>	
+	</section>
+
+	<section class="conB">
+		<div class="top_menu">
+			<ul>
+				<li><a class="select" href="#">전체</a></li>
+				<li><a href="#">고딕</a></li>
+				<li><a href="#">명조</a></li>
+				<li><a href="#">디자인</a></li>
+			</ul>			
+		</div>
+		<div class="bot_menu">
+			<ul>
+				<li class="select"><a href="./web4.html">#유튜브</a></li>
+				<li>#PPT</li>
+				<li>#그래픽</li>
+				<li>#보고서</li>
+				<li>#웹/앱</li>
+			</ul>			
+		</div>				
+	</section>
+
+	<section class="bar">
+		<div class="top_bar">
+			<input class="text" type="text" placeholder="넓은 하늘로의 비상을 꿈꾸며">
+			<div class="bot_bar">
+				<div class=	"bar-left">
+					<div class="search">
+						<input class="sear" type="text" placeholder="폰트를 검색해보세요">
+						<button class="sear-btn">검색</button>
+					</div>	
+						<div class="dropdown">
+						 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						    라이센스
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						    <li><a class="dropdown-item" href="#">자유사용</a></li>
+						    <li><a class="dropdown-item" href="#">범위제한</a></li>
+						    <li><a class="dropdown-item" href="#">비상업용</a></li>
+						  </ul>
+						</div>
+						<div class="barda">	
+							<input class="jozar" type="range">
+							<p>30px</p>
+						</div>
+				</div>
+				<div class=	"bar-right">
+					<div class="dropdown2">
+					 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					    인기순
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					    <li><a class="dropdown-item" href="#">최신순</a></li>
+					    <li><a class="dropdown-item" href="#">이름순</a></li>
+					  </ul>
+					</div>
+					<div class="layout">
+						<a href="./web2.html"><img src="https://i.ibb.co/GxrG0PC/image.png" alt="image" border="0"></a>
+						<a class="nselect" href="./web3.html"><img src="https://i.ibb.co/k2pg3Gz/image.png" alt="image" border="0"></a>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+	</section>
+
+	<section class="conD">
+		<div class="box">
+			<div class="box_text">
+				<h3>Gmarket Sans</h3>
+				<h4>3종</h4>
+				<p>넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#PPT</a>
+					<a href="#">#제목</a>
+					<a href="#">#내용</a>
+					<a href="#">#유튜브</a>
+					<a href="#">#썸네일</a>
+					<a href="#">#고딕</a>
+				</div>
+			</div>
+		</div>	
+		<div class="box">
+			<div class="box_text">
+				<h3>여기어때 잘난체</h3>
+				<h4>3종</h4>
+				<p id="text2">넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#썸네일</a>
+					<a href="#">#고딕</a>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_text">
+				<h3>카페24 고운밤</h3>
+				<h4>1종</h4>
+				<p id="text3">넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#자막</a>
+					<a href="#">#명조</a>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_text">
+				<h3>둥근모꼴</h3>
+				<h4>1종</h4>
+				<p id="text4">넓은 하늘로<br>비상을 꿈꾸며</p>
+			<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#자막</a>
+					<a href="#">#디자인</a>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_text">
+				<h3>Gmarket Sans</h3>
+				<h4>3종</h4>
+				<p>넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#PPT</a>
+					<a href="#">#제목</a>
+					<a href="#">#내용</a>
+					<a href="#">#유튜브</a>
+					<a href="#">#썸네일</a>
+					<a href="#">#고딕</a>
+				</div>
+			</div>
+		</div>	
+		<div class="box">
+			<div class="box_text">
+				<h3>여기어때 잘난체</h3>
+				<h4>3종</h4>
+				<p id="text2">넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#썸네일</a>
+					<a href="#">#고딕</a>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_text">
+				<h3>카페24 고운밤</h3>
+				<h4>1종</h4>
+				<p id="text3">넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#자막</a>
+					<a href="#">#명조</a>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_text">
+				<h3>둥근모꼴</h3>
+				<h4>1종</h4>
+				<p id="text4">넓은 하늘로<br>비상을 꿈꾸며</p>
+			<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#자막</a>
+					<a href="#">#디자인</a>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_text">
+				<h3>Gmarket Sans</h3>
+				<h4>3종</h4>
+				<p>넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#PPT</a>
+					<a href="#">#제목</a>
+					<a href="#">#내용</a>
+					<a href="#">#유튜브</a>
+					<a href="#">#썸네일</a>
+					<a href="#">#고딕</a>
+				</div>
+			</div>
+		</div>	
+		<div class="box">
+			<div class="box_text">
+				<h3>여기어때 잘난체</h3>
+				<h4>3종</h4>
+				<p id="text2">넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#썸네일</a>
+					<a href="#">#고딕</a>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_text">
+				<h3>카페24 고운밤</h3>
+				<h4>1종</h4>
+				<p id="text3">넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#자막</a>
+					<a href="#">#명조</a>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_text">
+				<h3>둥근모꼴</h3>
+				<h4>1종</h4>
+				<p id="text4">넓은 하늘로<br>비상을 꿈꾸며</p>
+			<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#자막</a>
+					<a href="#">#디자인</a>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_text">
+				<h3>Gmarket Sans</h3>
+				<h4>3종</h4>
+				<p>넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#PPT</a>
+					<a href="#">#제목</a>
+					<a href="#">#내용</a>
+					<a href="#">#유튜브</a>
+					<a href="#">#썸네일</a>
+					<a href="#">#고딕</a>
+				</div>
+			</div>
+		</div>	
+		<div class="box">
+			<div class="box_text">
+				<h3>여기어때 잘난체</h3>
+				<h4>3종</h4>
+				<p id="text2">넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#썸네일</a>
+					<a href="#">#고딕</a>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_text">
+				<h3>카페24 고운밤</h3>
+				<h4>1종</h4>
+				<p id="text3">넓은 하늘로<br>비상을 꿈꾸며</p>
+				<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#자막</a>
+					<a href="#">#명조</a>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_text">
+				<h3>둥근모꼴</h3>
+				<h4>1종</h4>
+				<p id="text4">넓은 하늘로<br>비상을 꿈꾸며</p>
+			<div class="tag1">
+					<a href="#">#유튜브</a>
+					<a href="#">#자막</a>
+					<a href="#">#디자인</a>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<footer>
+    <div class="all">
+    <div class="logo">
+         <a href="#">
+            <img src="https://i.postimg.cc/L4NDCht2/Kakao-Talk-20211204-175946636.png" alt="글길" height="24"></a>
+      </div>
+
+      <div class="smallall">
+      <div class="footer_list_menu">
+         <ul>
+            <li><a href="">사이트 소개</a></li>
+            <li><a href="">개인정보 처리방침</a></li>
+            <li><a href="">제휴문의</a></li>
+         </ul>
+      </div>
+
+      <div class="footer_information">
+         <ul>
+            <li><a href="">경기도 시흥시 산기대학로 237 (정왕동) 한국공학대학교</a></li>
+            <li><a href="">대표전화 031-8041-1000</a></li>
+            <li><a href="">webmaster@kpu.ac.kr</a></li>
+            <li><a href="">@gulgilcrop. All rights reserved.</a></li>
+         </ul>
+      </div>
+
+      <div class="footer_link">
+         <ul>
+            <li><a href="#"><img src="https://i.postimg.cc/bvwMRRRP/dsd.png" alt="유튜브" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/3RPcYQQr/ss.png" alt="인스타" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/W4TY1wyr/ssffdf.png" alt="페이스북" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/0ycXrw1B/sd.png" alt="트위터" height="24"></a></li>
+         </ul>
+      </div>
+     <div>
+   </div>
+
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
