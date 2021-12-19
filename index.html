@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lage="ko-KR">
+<head>
+    <meta charset="UTF-8"> 
+    <title>MAIN PAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link  rel="stylesheet"     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+ 
+</head>
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+      @font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+      }
+      @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+      }
+      @font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+      }
+      @font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+      }
+      @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+      }
+    @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+    @font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+     }
+
+    @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+    @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+
+    @font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+     }
+
+    @font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+     }
+
+    @font-face {
+    font-family: 'BMHANNAAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    
+    @font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+  @font-face {
+    font-family: 'BMHANNAPro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+    @font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+
+  @font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  @font-face {
+      font-family: 'BinggraeSamanco-Bold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'HSSaemaul-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+      *{ font-family: 'Noto Sans KR', sans-serif;
+         margin: 0;
+         padding: 0;
+         font-weight: 400;
+         color: #262626;
+      }
+
+      body  {
+        height: 1520px;
+      }  
+
+/*헤더*/
+    
+    a{
+     text-decoration: none;
+     color: #262626;
+     
+     }
+
+    header{
+         display: flex;
+         width: 1280px;
+         margin: auto;
+
+         justify-content: space-between;
+          align-items: center;
+         height: 80px;
+        
+      }
+
+      header .logo{
+         margin-left: 16px;
+         margin-right: 100px;
+      }
+
+      header .list_menu {
+      display: flex;
+      font-size: 16px;
+      justify-content: space-between;
+     align-items: center;
+
+      }   
+
+      header ul{
+      display: flex;
+      margin-bottom: 0;
+      padding-left: 0px;
+      }
+
+      header .list_menu li{
+      list-style: none;
+      margin: 0px 28px;
+      transition: all 1s ease-in;
+      }
+
+      header a:hover{
+         color: #FF4345;
+         font-weight: 700;
+      }
+
+
+      header .list_login li{
+      list-style: none;
+      margin: 0px 16px;
+      transition: all 0.5s ease-in;
+      }
+
+      header .list_login {
+      
+      font-size: 14px;
+      display: flex;
+     justify-content: space-between;
+       align-items: center;
+      }   
+
+
+/*첫번째줄*/
+    
+    .line1 {
+        width: 100%;
+        height: 480px;
+        
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .line1 .box1 {
+        width: 70%;
+        height: 480px;
+        background-color: #ffffff;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .line1 .box1 h2{
+        font-size: 60px;
+        
+        white-space: nowrap;
+        top:50%;
+        left:45%;
+        position: absolute;
+        color: transparent;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        }
+
+       .line1 .box1 h2::before {
+          content: "글길이 추천하는 임팩트 있는 폰트";
+          position: absolute;
+          left: 50px;
+          width: 100%;
+          height: 100%;
+          color: black;
+          overflow: hidden;
+          border-right: 1px solid black;
+          animation: typing 5s steps(31) 1;
+        }
+
+        @keyframes typing{
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  
+}
+
+        .box1 span{
+          color: #FF4345;
+          font-weight: 700;
+          font-size: 60px;
+
+        }
+
+
+    .line1 .box2 {
+        width: 30%;
+        height: 480px;
+        background-color: #FFBA5D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        transition: all .3s ease-in;
+    }
+
+     .line1 .box2:hover{
+      border-radius: 50%;
+     }
+
+    .line1 .box2 h2{
+        font-family: 'BMHANNAPro';
+
+        font-size: 80px;
+        text-align: center;
+        color: #262626;
+       
+
+      }
+
+    .box2 img{
+      height: 80px;
+      opacity: 1;
+      animation: pulse 1s ease-in infinite;
+      
+    }
+
+    .image{
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 150px;
+      top:  240px;
+    }
+
+    .box2 span{
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+       font-family: 'BMHANNAPro';
+       font-size: 80px;
+       opacity: 0;
+    }
+
+    .box2:hover span{
+     opacity: 1;
+    }
+
+    .box2:hover h2{
+     opacity: 0;
+
+    }
+
+    .box2:hover .image{
+      display: none;
+    }
+
+
+/*두번째 줄*/
+
+    
+    .line2 {
+        width: 100%;
+        height: 480px;
+        
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .line2 .box3 {
+        width: 25%;
+        height: 480px;
+        background-color: #FFC1B4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in;
+    }
+
+    .line2 .box3 span{
+        font-family: 'BMDOHYEON';
+        font-size: 52px;
+        
+        color: #262626;
+        display: inline-block;
+        margin: 0 -.075em;
+        animation: loading 3s infinite alternate;
+        line-height: 150%
+        
+    }
+
+    .line2 .box3:hover{
+      border-radius: 50%;
+     }
+
+    .line2 .box3 h2{
+      text-align: center;
+    }
+
+    .line2 .box3 span:nth-child(2) {
+      animation-delay: .1s;
+    }
+    .line2 .box3 span:nth-child(3) {
+      animation-delay: .2s;
+    }
+
+    @keyframes loading {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(0.8);
+      }
+    }
+
+    .box3 .hover{
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+       font-family: 'BMDOHYEON';
+       font-size: 52px;
+       opacity: 0;
+    }
+
+    .box3:hover .hover{
+     opacity: 1;
+     animation: none;
+    }
+
+    .box3:hover h2{
+     opacity: 0;
+
+    }
+
+
+
+    .line2 .box4 {
+        width: 25%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .line2 .box4 .mibox1 {
+        width: 100%;
+        height: 240px;
+        background-color: #FFE663;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: all .3s ease-in;
+    }
+
+    .line2 .box4 .mibox1:hover{
+      border-radius: 50%;
+     }
+
+    .line2 .box4 .mibox1 h2{
+         font-family: 'NeoDunggeunmo';
+        font-size: 52px;
+        font-weight: 600;
+        color: #262626;
+        text-align: center;
+        margin-bottom: 0;
+        margin-left: 5px;
+      
+    }
+
+    .box4 .mibox1 .hover{
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+       font-family: 'NeoDunggeunmo';
+       font-size: 52px;
+       opacity: 0;
+    }
+
+    .mibox1:hover .hover{
+     opacity: 1;
+     
+    }
+
+    .mibox1:hover h2{
+     opacity: 0;
+    }
+
+    .mibox1:hover img{
+      display: none;
+    }
+
+    .mibox1 img{
+       animation: pulse 1s step-end infinite;
+    }
+
+    .box4 .mibox2 .hover{
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+       font-family: nanumsquare;
+       font-size: 52px;
+       opacity: 0;
+       font-weight: 600;
+     }
+
+     .line2 .box4 .mibox2:hover{
+      border-radius: 50%;
+     }
+
+
+    .line2 .box4 .mibox2 {
+        width: 100%;
+        height: 240px;
+        background-color: #89CDFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in;
+    }
+
+
+    .line2 .box4 .mibox2 h2{
+        font-family: nanumsquare ;
+        font-size: 56px;
+        font-weight: 600;
+        color: #262626;
+     }
+
+     .mibox2:hover .hover{
+     opacity: 1;
+    }
+
+     .mibox2:hover h2{
+     opacity: 0;
+    }
+
+
+    .line2 .box5 {
+        width: 50%;
+        height: 480px;
+        background-color: #A8BAF6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in;
+    }
+
+    .line2 .box5 h2{
+        font-family: 'LAB디지털';
+        font-size: 150px;
+        font-weight: 600;
+        color: #262626;
+        animation: tada 1s infinite;  
+        animation-duration: 4s;  
+    }
+
+    .line2 .box5:hover{
+      border-radius: 50%
+    }
+
+    .line2 .box5:hover h2{
+      opacity: 0;
+    }
+
+    .line2 .box5:hover .hover{
+      opacity: 1;
+    }
+
+     .line2 .box5 .hover{
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+       font-family: 'LAB디지털';
+       font-size: 100px;
+       opacity: 0;
+       font-weight: 600;
+     }
+
+
+/*세번째 줄*/
+
+    .line3 {
+        width: 100%;
+        height: 480px;
+        
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+   
+    .line3 .box6 {
+        width: 50%;
+        height: 480px;
+        background-color: #6EC050;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in;
+    }
+
+    .line3 .box6:hover{
+      border-radius: 50%
+    }
+
+    .line3 .box6:hover h2{
+      opacity: 0;
+    }
+
+    .line3 .box6:hover .hover{
+      opacity: 1;
+    }
+
+    .line3 .box6 .hover{
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+       font-family: 'GmarketSansMedium';
+       font-size: 60px;
+       opacity: 0;
+       font-weight: 600;
+       color: #262626;
+     }
+
+    .line3 .box6 h2{
+        font-family: 'GmarketSansMedium';
+        font-size: 80px;
+        font-weight: 600;
+        color: #262626;
+        text-align: center;
+        margin-bottom: 0;
+        
+    }
+
+    .line3 .box6 span{
+      font-family: 'GmarketSansMedium';
+        font-size: 80px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    .line3 .box7 .hover{
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+       font-family: 'Y_Spotlight';
+       font-size: 44px;
+       opacity: 0;
+       color: #262626;
+     }
+
+     .line3 .box7:hover{
+      border-radius: 50%
+    }
+
+    .line3 .box7:hover h2{
+      opacity: 0;
+    }
+
+    .line3 .box7:hover .hover{
+      opacity: 1;
+    }
+
+    .line3 .box7:hover img{
+      display: none;
+    }
+
+    .line3 .box7 {
+        width: 25%;
+        height: 480px;
+        background-color: #FF9A69;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in;
+    }
+
+     .line3 .box7:hover{
+      border-radius: 50%
+    }
+
+    .line3 .box7 h2{
+        font-family: 'Y_Spotlight';
+        font-size: 70px;
+       
+        color: #262626;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        animation: shakeX 10s ease-in infinite;
+
+    }
+
+
+
+    .line3 .box8 {
+        width: 25%;
+        height: 480px;
+        background-color: #CFCFCF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease-in;
+
+    }
+
+    .line3 .box8 .hover{
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+       font-family: 'BMJUA';
+       font-size: 80px;
+       opacity: 0;
+       color: #262626;
+     }
+
+     .line3 .box8:hover{
+      border-radius: 50%
+    }
+
+    .line3 .box8:hover h2{
+      opacity: 0;
+    }
+
+    .line3 .box8:hover .hover{
+      opacity: 1;
+    }
+
+
+     .line3 .box8:hover{
+      border-radius: 50%
+    }
+
+    .line3 .box8 h2{
+        font-family: 'BMJUA';
+        font-size: 200px;
+        
+        color: #262626;
+        text-align: center;
+        
+    }
+
+
+/*네번째 줄*/
+
+    .line4 {
+        width: 100%;
+        height: 480px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+    }
+
+   
+    .line4 .box9 {
+        width: 50%;
+        height: 480px;
+        background-color: #FF4345;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in;
+    }
+
+    .line4 .box9 h2{
+        font-family: 'BinggraeSamanco-Bold';
+        font-size: 100px;
+        font-weight: 600;
+        color: #262626;
+        text-align: center;
+        
+    }
+
+     .line4 .box9 span{
+      font-family: 'BinggraeSamanco-Bold';
+        font-size: 100px;
+        font-weight: 600;
+        color: #262626;
+     }
+
+     .line4 .box9 .hover{
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+       font-family: 'BinggraeSamanco-Bold';
+       font-size: 100px;
+       opacity: 0;
+       color: #262626;
+     }
+
+     .line4 .box9:hover{
+      border-radius: 50%
+    }
+
+    .line4 .box9:hover h2{
+      opacity: 0;
+    }
+
+    .line4 .box9:hover .hover{
+      opacity: 1;
+    }
+
+
+    .line4 .box10 {
+        width: 50%;
+        height: 480px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease-in;
+    }
+
+    .line4 .box10 h2{
+        font-family: 'HSSaemaul-Regular';
+        font-size: 150px;
+        
+        color: #262626;
+        text-align: center;
+
+      
+    }
+
+    .line4 .box10 .hover{
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+       font-family: 'HSSaemaul-Regular';
+       font-size: 150px;
+       opacity: 0;
+       color: #262626;
+     }
+
+     .line4 .box10:hover{
+      border-radius: 50%
+    }
+
+    .line4 .box10:hover h2{
+      opacity: 0;
+    }
+
+    .line4 .box10:hover .hover{
+      opacity: 1;
+    }
+
+
+
+
+
+</style>
+
+
+
+<body>
+
+    <header style="position: relative; z-index: 2;">
+      <div class="logo">
+         <a href="#">
+            <img src="https://i.ibb.co/YW3TJgZ/Kakao-Talk-20211211-0006528511.png" alt="글길" height="30"></a>
+      </div>      
+
+      <div class="list_menu">
+         <ul>
+            <li><a class="select" href="">전체폰트</a></li>
+            <li><a href="">라이센스</a></li>
+            <li><a href="">폰트길잡이</a></li>
+         </ul>
+      </div>   
+
+      <div class="list_login">
+         <ul>
+            <li><a href="">로그인</a></li>
+            <li><a href="">회원가입</a></li>
+         </ul>
+      </div>
+   </header>
+
+   <section class="conA" style="position: relative; top: -80px; z-index: 1;">
+    <div class="line1">
+        <div class="box1" ><h2>글길이 추천하는 임팩트 있는 폰트</h2></div>
+        <div class="box2" onclick="window.open('https://www.behance.net/')">
+          <div class="alink">
+            <h2>치킨치면<br> &nbsp; &nbsp;이</h2>
+          </div>
+          <div class="image">
+            <img  src="https://ifh.cc/g/4PtO9L.png">
+          </div>
+          <span class="hover">배민<br>한나체</span>
+        </div>
+    </div>
+
+
+    <div class="line2">
+        <div class="box3" onclick="window.open('https://www.behance.net/')"><h2><span>쉽고,</span><br>
+          <span>정확하고,</span><br>
+          <span>위트있게</span></h2>
+          <span class="hover">배민<br>도현체</span>
+        </div>
+        <div class="box4">
+            <div class="mibox1" onclick="window.open('https://www.behance.net/')"><h2>CLICK</h2>
+              <img height="50px;" src="https://ifh.cc/g/T0pCxv.png">
+              <span class="hover">둥근모꼴</span>
+            </div> 
+            <div class="mibox2" onclick="window.open('https://www.behance.net/')"><h2>반듯하게</h2>
+              <span class="hover">나눔스퀘어</span></div>
+        </div>
+        <div class="box5" onclick="window.open('https://www.behance.net/')"><h2>01 : 50</h2>
+          <span class="hover">LAB디지털</span></div>
+    </div>
+
+
+    <div class="line3">
+        <div class="box6" onclick="window.open('https://www.behance.net/')"><h2><span>깔끔</span>하고,<br>까리하게</h2><span class="hover">GmarketSans</span></div>
+        <div class="box7" onclick="window.open('https://www.behance.net/')"><img height="70px;" src="https://ifh.cc/g/iUZCBg.png"><h2>웃음</h2><img height="70px;" src="https://ifh.cc/g/iUZCBg.png"><span class="hover">Y 너만을 비춤체</span></div>
+        <div class="box8" onclick="window.open('https://www.behance.net/')"><h2>붓</h2><span class="hover">배민<br>주아체</span></div>
+    </div>
+
+
+    <div class="line4">
+        <div class="box9" onclick="window.open('https://www.behance.net/')"><h2>싸만코 폰트</h2><span class="hover">빙그레 싸만코체</span></div>
+        <div class="box10" onclick="window.open('https://www.behance.net/')"><h2>간판에 잘<br>어울려요</h2><span class="hover">HS새마을체</span></div>
+    </div>
+  </section>  
+
+
+</body>
