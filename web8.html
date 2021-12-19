@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mypage</title>
+	<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        *{
+           font-family: 'Noto Sans KR', sans-serif;
+           margin: 0;
+           padding: 0;
+        }
+   a{
+     text-decoration: none;
+     color: #262626;
+     
+     }
+
+/*헤더*/
+
+    header{
+      display: flex;
+      width: 1280px;
+      margin: auto;
+
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+
+    header .logo{
+      margin-left: 16px;
+      margin-right: 100px;
+    }
+
+    header .list_menu {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+
+    } 
+
+    header ul{
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0px;
+    }
+
+    header .list_menu li{
+    list-style: none;
+    margin: 0px 28px;
+    transition: all 1s ease-in;
+    }
+
+    header a:hover{
+      color: #FF4345;
+      font-weight: 700;
+    }
+
+
+    header .list_login li{
+    list-style: none;
+    margin: 0px 16px;
+    transition: all 0.5s ease-in;
+    }
+
+    header .list_login {
+    
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }  
+
+
+
+
+		.profile{ 
+			width: 430px; height: 183px; 
+			margin-top: 88px;
+			margin-left: auto; margin-right: auto;
+		}
+		.profile img{
+			display: block; margin: 0px auto;
+		}
+		.profile .explain{
+			width: 430px; height: 56px;
+			display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+			margin-top: 25px;
+		}
+		.profile h3{
+			font-size: 18px; font-weight: 400; line-height: 18px;
+			align-items: center;
+		}
+		.profile h4{ 
+			margin-top: 5px;
+			font-size: 14px; font-weight: 400; line-height: 14px;
+			color: #9E9E9E;
+			text-align: center;
+		}
+
+		.first_box{
+			width: 856px; height: 270px;
+			margin-left: auto; margin-right: auto;
+			margin-top: 50px;
+			border: 0.5px solid #595959;
+            border-radius: 6px;
+		}
+		.first_box .profile_main .ex{
+			margin-top: 24px;
+		}
+		.first_box .profile_main .ex h3{
+			font-size: 18px; font-weight: 700; line-height: 18px;
+			align-items: center; padding-bottom: 8px;
+			color: #262626;
+		}
+		.first_box .profile_main .ex h4{
+			font-size: 14px; font-weight: 400; line-height: 14px;
+			align-items: center; padding-bottom: 6px;
+			color: #262626;
+		}
+		.first_box .ex, .ex_sub{
+			margin-top: 70px;
+			margin-left: 30px; 
+			position: absolute;
+		}
+		.first_box .ex_sub .box1{
+			width: 796px;
+			border-bottom: 0.8px solid #e1e1e0; 
+			display: flex; flex-wrap: wrap;
+			text-align: center;align-items: center;
+		}
+		.first_box .profile_main .ex_sub .box1 h5{'
+			color: #262626;'
+			font-size: 14px; font-weight: 300; line-height: 11px;
+		    padding-top: 40px;  padding-bottom: 40px; padding-right: 155px;
+		}
+		.first_box .profile_main .ex_sub .box1 h6{
+			color: #262626;
+			font-size: 14px; font-weight: 400; line-height: 11px;
+		    padding-top: 40px; padding-bottom: 40px; padding-right: 310px;
+		}
+		.first_box .profile_main .ex_sub .box1 .up{
+			opacity: 0.3;
+			text-align: center; align-items: center;
+			position: relative;
+		}
+		.first_box .profile_main .ex_sub .box1 .down{
+			opacity: 0;
+			text-align: center; align-items: center;
+			position: absolute;
+			right: 12px;
+		}
+		.first_box .profile_main .ex_sub .box1 .down:hover{
+			opacity: 1;
+			transition:all 0.3s ease-in-out;
+		}
+		.first_box .ex_sub .box2{
+			border-bottom: 0.8px solid #e1e1e0; 
+			width: 796px;
+			display: flex; flex-wrap: wrap;
+			text-align: center;align-items: center;
+		}
+		.first_box .profile_main .ex_sub .box2 h5{
+			color: #262626;
+			font-size: 14px; font-weight: 300; line-height: 11px;
+		    padding-top: 21px;  padding-bottom: 21px; padding-right: 142px;
+		}
+		.first_box .profile_main .ex_sub .box2 h6{
+			color: #262626;
+			font-size: 14px; font-weight: 400; line-height: 11px;
+		    padding-top: 21px; padding-bottom: 21px; padding-right: 560px;
+		}
+/*		.first_box .profile_main .ex_sub .box2 img:hover{
+			color: #ff4345;
+		}*/
+		.first_box .profile_main .ex_sub .box3 h5{
+			font-size: 11px; font-weight: 200; line-height: 11px;
+			padding-top:21px;  margin-left: 700px; color: #808080;
+		}
+		.first_box .profile_main .ex_sub .box3 h5:hover{
+			font-weight: 500; color: #000;
+		}
+
+		.all_{
+			width: 856px; height: 278px;
+			margin-top: 24px; margin-bottom: 200px;
+			margin-left: auto;margin-right: auto;
+			display: flex; flex-wrap: wrap;
+		}
+		.second_box{
+			width: 413px; height: 275px;
+			border: 0.5px solid #595959;
+            border-radius: 6px;
+            margin-right: 25px;
+		}
+		.second_box .ex2{
+			margin-left: 24px; margin-top: 24px;
+		}
+		.second_box .ex2 h3{
+			font-size: 18px; font-weight: 700; line-height: 18px; 
+			padding-bottom: 8px;
+		}
+		.second_box .ex2 h4{
+			font-size: 14px; font-weight: 400; line-height: 14px;
+		}
+		.second_box h5{
+			font-size: 14px; font-weight: 400; line-height: 14px;
+			color: #BEBEBE;
+			margin-top: 90px; margin-bottom: 85px;
+			text-align: center;
+		}
+
+		.third_box{
+			width: 413px; height: 275px;
+			border: 0.5px solid #595959;
+            border-radius: 6px;
+		}
+		.third_box .ex3{
+			margin-left: 24px; margin-top: 24px;
+		}
+		.third_box .ex3 h3{
+			font-size: 18px; font-weight: 700; line-height: 18px;
+			padding-bottom: 8px; 
+		}
+		.third_box .ex3 h4{
+			font-size: 14px; font-weight: 400; line-height: 14px;
+		}
+		.third_box h5{
+			font-size: 14px; font-weight: 400; line-height: 14px;
+			color: #BEBEBE;	margin-top: 90px; margin-bottom: 85px;		
+			text-align: center;
+		}
+
+		
+
+		 footer{
+      display: flex;
+      width: 100%;
+      margin: auto;
+            left: 0;
+      bottom: 0;
+      background-color: black;
+      margin-top: 100px;
+   
+
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 194px;
+
+      }  
+
+      footer .all{
+      display: flex;
+      width: 1280px;
+      margin: auto;
+      margin-top: 0px;
+      min-width: 1280px;
+      }
+
+      footer a {
+      
+      color: #E9E9E9;
+      }  
+
+      footer .logo{
+      margin-top: 50px;
+      margin-left: 80px;
+      }
+
+      footer .smllall{
+      display: flex;
+      margin: 0px;
+      justify-content: space-between;
+
+      }
+
+      footer .footer_list_menu {
+      display: flex;
+      font-size: 16px;
+      justify-content: space-between;
+      margin-top: 45px;
+      margin-left: 50px;    
+      margin-right: 100px;  
+      }   
+
+      footer ul{
+      display: flex;
+      }
+
+      footer .footer_list_menu li{
+      list-style: none;
+      margin-right: 30px;
+      }
+
+      footer .footer_list_menu a{
+      text-decoration: none;
+      }
+
+
+      footer .footer_information {
+      display: flex;
+      font-size: 16px;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-left: 50px;      
+      }   
+
+     
+
+      footer .footer_information li{
+      list-style: none;
+      margin-right: 20px;
+      }
+
+      footer .footer_information a{
+      text-decoration: none;
+      }
+
+      footer .footer_link{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-left: 50px; 
+
+      }
+
+      footer .footer_link li{
+      list-style: none;
+      margin-right: 10px;
+      }
+
+      footer .footer_link a{
+      text-decoration: none;
+      }
+
+      footer a:hover{
+      color: white;
+      }
+
+	</style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="#">
+        <img src="https://i.ibb.co/YW3TJgZ/Kakao-Talk-20211211-0006528511.png" alt="글길" height="30"></a>
+    </div>    
+
+    <div class="list_menu">
+      <ul>
+        <li><a href="">전체폰트</a></li>
+        <li><a class="select" href="">라이센스</a></li>
+        <li><a href="">폰트길잡이</a></li>
+      </ul>
+    </div>  
+
+    <div class="list_login">
+      <ul>
+        <li><a style="color: #FF4345; font-weight:700; "  href="">마이페이지</a></li>
+        <li><a href="">회원가입</a></li>
+      </ul>
+    </div>
+  </header>
+    <!-- ----------------------------------------------------------- -->
+	<div class="profile">
+		<img src="https://i.postimg.cc/RZw3vC07/image.png" width="100">
+		<div class="explain">
+			<h3><b>밤똥이</b>님, 환영합니다.</h2>
+			<h4>정보, 개인정보 보호 및 보안을 관리하여 나에게 맞게 사용할 수 있습니다.</h3>
+		</div>
+	</div>
+
+	<div class="first_box">
+		<div class="profile_main">
+			<div class="ex">
+				<h3>프로필</h3>
+				<h4>개인 정보 및 이를 관리하기 위한 옵션입니다.</h4>
+			</div>
+			<div class="ex_sub">
+				<div class="box1">
+					<h5>사진</h5>
+					<h6>사진을 추가하여 계정을 맞춤설정합니다.</h6>
+					<img class="up" src="https://i.postimg.cc/RZw3vC07/image.png" width="60" height="60">
+					<img class="down" src="https://i.postimg.cc/qMd5TZY6/Frame-68.png" width="60" height="60">
+				</div>
+				<div class="box2">
+					<h5>닉네임</h5>
+					<h6>밤똥이</h6>
+					<img src="https://i.postimg.cc/8cfFs9WW/image.png" width="6" height="12">
+				</div>
+				<div class="box3">
+					<h5>개인 정보 수정하기</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="all_">
+	<div class="second_box">
+		<div class="ex2">
+			<h3>다운 받은 폰트 기록</h3>
+			<h4>내가 다운 받은 폰트를 보기 위한 옵션입니다.</h4>
+		</div>
+			<h5>아직 다운 받은 폰트가 없어요!</h5>
+	</div>
+
+	<div class="third_box">
+		<div class="ex3">
+			<h3>최근에 본 폰트 기록</h3>
+			<h4>내가 최근에본 폰트를 보기 위한 옵션입니다.</h4>
+		</div>
+			<h5>아직 본 폰트가 없어요!</h5>
+	</div>
+</div>
+
+<!-- ----------------------------------------------------- -->
+	<footer>
+    <div class="all">
+    <div class="logo">
+         <a href="#">
+            <img src="https://i.postimg.cc/L4NDCht2/Kakao-Talk-20211204-175946636.png" alt="글길" height="24"></a>
+      </div>
+
+      <div class="smallall">
+      <div class="footer_list_menu">
+         <ul>
+            <li><a href="">사이트 소개</a></li>
+            <li><a href="">개인정보 처리방침</a></li>
+            <li><a href="">제휴문의</a></li>
+         </ul>
+      </div>
+
+      <div class="footer_information">
+         <ul>
+            <li><a href="">경기도 시흥시 산기대학로 237 (정왕동) 한국공학대학교</a></li>
+            <li><a href="">대표전화 031-8041-1000</a></li>
+            <li><a href="">webmaster@kpu.ac.kr</a></li>
+            <li><a href="">@gulgilcrop. All rights reserved.</a></li>
+         </ul>
+      </div>
+
+      <div class="footer_link">
+         <ul>
+            <li><a href="#"><img src="https://i.postimg.cc/bvwMRRRP/dsd.png" alt="유튜브" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/3RPcYQQr/ss.png" alt="인스타" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/W4TY1wyr/ssffdf.png" alt="페이스북" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/0ycXrw1B/sd.png" alt="트위터" height="24"></a></li>
+         </ul>
+      </div>
+     <div>
+   </div>
+
+</div>
+</footer>
+</footer>
+</body>
+</html>

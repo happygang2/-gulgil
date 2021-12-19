@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        *{
+           font-family: 'Noto Sans KR', sans-serif;
+           margin: 0;
+           padding: 0;
+           font-weight: 400;
+        }
+        a{
+           text-decoration: none;
+           color: #262626;
+        }
+          header{
+      display: flex;
+      width: 1280px;
+      margin: auto;
+
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+
+    header .logo{
+      margin-left: 16px;
+      margin-right: 100px;
+    }
+
+    header .list_menu {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+
+    } 
+
+    header ul{
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0px;
+    }
+
+    header .list_menu li{
+    list-style: none;
+    margin: 0px 28px;
+    transition: all 1s ease-in;
+    }
+
+    header a:hover{
+      color: #FF4345;
+      font-weight: 700;
+    }
+
+
+    header .list_login li{
+    list-style: none;
+    margin: 0px 16px;
+    transition: all 0.5s ease-in;
+    }
+
+    header .list_login {
+    
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    } 
+/*-------------------------------------------------------------*/
+        .main_container{ 
+          width: 414px; height: 600px; position: relative;
+          /*background-color: #dddddd;*/
+          margin-top: 150px;
+          margin-left: auto; margin-right: auto;
+        }
+        .main_container h2{
+          height: 30px; /*background-color: lightblue;*/
+          text-align: center; line-height: 30px;
+        }
+        h2:after{
+          content: "";
+          width: 140px;
+          display: block;
+          border-bottom: 3px solid #ff4345;
+          margin-top: -1.5px; margin-left: auto; margin-right: auto;
+        }
+        .service_line{
+          border-bottom: 1.5px solid #efefef; 
+        }
+        .top h2{
+          font-size: 16px; font-weight: 700; line-height: 30px;
+          align-items: center; color: #000;
+        }
+        .middle{
+          margin-top: 24px;
+        }
+       
+        .id, .password{
+          width: 392px;
+          height: 62px;
+          padding-left: 20px;
+          margin-top: 12px;
+          border: none;
+          background-color: #FFF6F6;
+          outline: none;
+          border-radius: 3px;
+        }
+
+
+
+
+        .sub{
+          height: 16px; width: 110px; position: absolute; /*background-color: lightblue;*/
+          margin-top: 16px; right: 0;
+        }
+        .middle_sub{
+          float: right; 
+        }
+     
+        .middle_text{
+          font-size: 13px; font-weight: 300; line-height: 13px; position: absolute; top: -2px;
+        }
+        .last .third{
+          height: 62px; 
+          border: 1px solid #595959;
+          border-radius: 3px;
+          font-size:  16px; font-weight: 00; line-height: 64px;
+          text-align: center; vertical-align: middle;
+          margin-right: auto; margin-left: auto; margin-top: 48px;
+          transition: all 0.3s ease;
+        }
+        .last .third:hover{
+         
+          background-color: #FF4345;
+          color: white;
+          border: none;
+          
+        }
+        .last_sub{/* background-color: lightblue;*/
+          height: 15px; margin-top: 16px;
+        }
+        .last_sub .last_line{
+          display: flex; flex-wrap: wrap;
+        }
+        .last_sub a{
+          font-size:13px; font-weight: 500; line-height: 13px;
+        }
+
+        .last_sub a:hover{
+          color: #FF4345;
+        }
+        .last_sub ul{
+          display: flex; flex-wrap: wrap;
+          position: absolute; right: 0;
+        }
+        .last_sub li{
+          display: flex; flex-wrap: 
+          list-style: none;
+          font-size: 13px; font-weight: 400; line-height: 13px;
+          padding-left: 10px;
+        }
+
+/*푸터*/
+       footer{
+      display: flex;
+      width: 100%;
+      margin: auto;
+            left: 0;
+      bottom: 0;
+      background-color: black;
+      margin-top: 100px;
+   
+
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 194px;
+
+      }  
+
+      footer .all{
+      display: flex;
+      width: 1280px;
+      margin: auto;
+      margin-top: 0px;
+      min-width: 1280px;
+      }
+
+      footer a {
+      
+      color: #E9E9E9;
+      }  
+
+      footer .logo{
+      margin-top: 50px;
+      margin-left: 80px;
+      }
+
+      footer .smllall{
+      display: flex;
+      margin: 0px;
+      justify-content: space-between;
+
+      }
+
+      footer .footer_list_menu {
+      display: flex;
+      font-size: 16px;
+      justify-content: space-between;
+      margin-top: 45px;
+      margin-left: 50px;    
+      margin-right: 100px;  
+      }   
+
+      footer ul{
+      display: flex;
+      }
+
+      footer .footer_list_menu li{
+      list-style: none;
+      margin-right: 30px;
+      }
+
+      footer .footer_list_menu a{
+      text-decoration: none;
+      }
+
+
+      footer .footer_information {
+      display: flex;
+      font-size: 16px;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-left: 50px;      
+      }   
+
+     
+
+      footer .footer_information li{
+      list-style: none;
+      margin-right: 20px;
+      }
+
+      footer .footer_information a{
+      text-decoration: none;
+      }
+
+      footer .footer_link{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-left: 50px; 
+
+      }
+
+      footer .footer_link li{
+      list-style: none;
+      margin-right: 10px;
+      }
+
+      footer .footer_link a{
+      text-decoration: none;
+      }
+
+      footer a:hover{
+      color: white;
+      }
+  </style>
+</head>
+<body>
+      <header>
+    <div class="logo">
+      <a href="#">
+        <img src="https://i.ibb.co/YW3TJgZ/Kakao-Talk-20211211-0006528511.png" alt="글길" height="30"></a>
+    </div>    
+
+    <div class="list_menu">
+      <ul>
+        <li><a class="select" href="">전체폰트</a></li>
+        <li><a href="">라이센스</a></li>
+        <li><a href="">폰트길잡이</a></li>
+      </ul>
+    </div>  
+
+    <div class="list_login">
+      <ul>
+        <li><a href="">로그인</a></li>
+        <li><a href="">회원가입</a></li>
+      </ul>
+    </div>
+  </header>
+    <!-- ----------------------------------------------------------- -->
+
+
+      <section class="main_container">
+        <div class="top">
+          <div class="service_line">
+            <h2>이메일 로그인</h2>
+          </div>
+        </div>
+
+        <div class="middle">
+          <input class="id" type="text" placeholder="아이디">
+
+          <input class="password" type="text" placeholder="비밀번호">
+        </div>
+
+        <div class="sub">
+            <input class="middle_sub" type="checkbox" name="keepLogin">
+         <label for="keepLogin"><span class="middle_text">로그인 상태 유지</span></label>
+      </div>
+
+      <div class="last">
+        <div class="third">로그인</div>
+      </div>
+
+      <div class="last_sub">
+        <div class="last_line">
+          <a href="#">회원가입</a>
+          <ul>
+            <li><a href="#">아이디 찾기</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
+          </ul>
+
+        </div>
+      </div>
+      </section>
+
+<!-- --------------------------------------------- -->
+<footer>
+    <div class="all">
+    <div class="logo">
+         <a href="#">
+            <img src="https://i.postimg.cc/L4NDCht2/Kakao-Talk-20211204-175946636.png" alt="글길" height="24"></a>
+      </div>
+
+      <div class="smallall">
+      <div class="footer_list_menu">
+         <ul>
+            <li><a href="">사이트 소개</a></li>
+            <li><a href="">개인정보 처리방침</a></li>
+            <li><a href="">제휴문의</a></li>
+         </ul>
+      </div>
+
+      <div class="footer_information">
+         <ul>
+            <li><a href="">경기도 시흥시 산기대학로 237 (정왕동) 한국공학대학교</a></li>
+            <li><a href="">대표전화 031-8041-1000</a></li>
+            <li><a href="">webmaster@kpu.ac.kr</a></li>
+            <li><a href="">@gulgilcrop. All rights reserved.</a></li>
+         </ul>
+      </div>
+
+      <div class="footer_link">
+         <ul>
+            <li><a href="#"><img src="https://i.postimg.cc/bvwMRRRP/dsd.png" alt="유튜브" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/3RPcYQQr/ss.png" alt="인스타" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/W4TY1wyr/ssffdf.png" alt="페이스북" height="24"></a></li>
+            <li><a href="#"><img src="https://i.postimg.cc/0ycXrw1B/sd.png" alt="트위터" height="24"></a></li>
+         </ul>
+      </div>
+     <div>
+   </div>
+
+</div>
+</footer>
+
+   
+</body>
+</html>
